@@ -45,6 +45,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     input = gets.strip
+    binding.pry
     Song.all.select! {|x| x if x.artist.name == input}.sort_by(&:name).each_with_index do |x, index|
       puts "#{index+1}. #{x.artist.name} - #{x.genre.name}"
     end
