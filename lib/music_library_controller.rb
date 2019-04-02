@@ -45,7 +45,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     artist = gets.strip
-    
+    binding.pry
   end
 
   def list_songs_by_genre
