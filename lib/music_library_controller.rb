@@ -64,9 +64,9 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    song_num = gets.chomp
+    input = gets.chomp
     #binding.pry
-    if (1..list_songs.length).include?(song_num)
+    if (1..list_songs.length).include?(input)
       #play song
     end
   end
