@@ -45,14 +45,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter the name of an artist:"
     artist = gets.strip
-    songs = music.collect {|x| x.chomp(".mp3")}
-    songs.collect! {|x| x.split(" - ")}.sort_by! {|x| x[1]}
-    songs.select! {|x| x if x[0] == artist}
-    songs.each {|x| x.delete_at(0)}
-    songs.each_with_index do |x, index|
-      puts "#{index+1}. #{x[0]} - #{x[1]}"
-    end
-    #binding.pry
+    
   end
 
   def list_songs_by_genre
