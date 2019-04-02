@@ -47,7 +47,8 @@ class MusicLibraryController
     input = gets.strip
     Song.all.each_with_index do |x, index|
       if x.artist.name == input
-      puts "#{index+1}. #{x.artist.name} - #{x.genre.name}" if x.artist.name == input 
+        puts "#{index+1}. #{x.artist.name} - #{x.genre.name}" if x.artist.name == input 
+      end
     end
     #binding.pry
   end
