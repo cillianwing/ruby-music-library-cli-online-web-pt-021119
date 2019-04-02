@@ -50,7 +50,6 @@ class MusicLibraryController
         puts "#{index+1}. #{x.name} - #{x.genre.name}"
       end
     end
-    #binding.pry
   end
 
   def list_songs_by_genre
