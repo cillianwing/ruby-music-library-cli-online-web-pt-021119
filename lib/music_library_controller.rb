@@ -68,7 +68,7 @@ class MusicLibraryController
     #binding.pry
     if (1..Song.all.length).include?(input)
       song = Song.all.sort_by(&:name)[input - 1]
-      puts "Now playing #{} by #{}"
+      puts "Playing #{song.name} by #{}"
     else 
       puts "Which song number would you like to play?"
     end
